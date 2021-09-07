@@ -22,15 +22,17 @@
     <title>Portfolio</title>
     <!-- Comment this out when meta tags configured -->
     <%#= display_meta_tags %>
-    <%= favicon_tag 'favicon.ico' %>
-    <%= stylesheet_link_tag "app" %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <%= stylesheet_link_tag "app" %>
+    <%= stylesheet_link_tag "highlighting" %>
+    <%= favicon_tag 'favicon.ico' %>
 
   </head>
 
   <body>
     <%= yield %>
     <%= javascript_include_tag "bundle" %>
+    <%= javascript_include_tag  "app" %>
   </body>
 </html>
