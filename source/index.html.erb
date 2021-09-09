@@ -2,9 +2,6 @@
 <%= partial 'partials/navbar' %>
 
 <!-- Page start -->
-
-
-
   <div class="intro">
     <div class="name-title">
       <h1>Hello</h1>
@@ -19,30 +16,23 @@
 
 
   <!-- Computer -->
-  <div class="row">
-  <div class="col-6">
-      <div class="device device-macbook-pro tech-device">
-    <div class="device-frame">
-      <img class="device-content" src=<%=image_path(data.products.first.image)%>>
-    </div>
-    <div class="device-stripe"></div>
-    <div class="device-header"></div>
-    <div class="device-sensors"></div>
-    <div class="device-btns"></div>
-    <div class="device-power"></div>
-    <div class="device-home"></div>
-  </div>
-  </div>
-  <div class="col-6">
-  <%# <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate accusamus quisquam minus consectetur maxime quidem quae provident, voluptatum tempore debitis sunt esse assumenda ducimus voluptatibus! Voluptates ut assumenda nobis esse.</h1> %>
-  </div>
-  </div>
+  <%= partial 'partials/device' %>
 
   <!-- Banner -->
   <%= partial 'partials/banner' %>
+  <!-- Transition -->
+  <%= partial 'partials/transition' %>
+
+
+  <!-- summary of skills -->
+  <%= partial 'partials/summary' %>
   <!-- Projects Section -->
-  <%= partial 'partials/projects' %>
+  <%= partial 'partials/realprojects' %>
+  <%#= partial 'partials/projects' %>
 </div>
+
+
+
 <script>
 var nystories = document.querySelector("p").offsetTop;
 window.onscroll = function() {
@@ -54,4 +44,21 @@ window.onscroll = function() {
   document.querySelector(".background").style.background = "linear-gradient(rgba(255, 255, 255, " + (opac/50) + "), rgba(255, 255, 255, " + (opac/50) + ")), url(/assets/images/background.gif) no-repeat";
   }
 }
+
+// tabs
+
+$('.tabgroup > div').hide();
+$('.tabgroup > div:first-of-type').show();
+$('.tabs a').click(function(e){
+  e.preventDefault();
+    var $this = $(this),
+        tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+        others = $this.closest('li').siblings().children('a'),
+        target = $this.attr('href');
+    others.removeClass('active');
+    $this.addClass('active');
+    $(tabgroup).children('div').hide();
+    $(target).show();
+
+})
 </script>
