@@ -15,6 +15,8 @@
   </div>
   <!-- Gif -->
   <%= partial 'partials/gif' %>
+  <%= partial 'partials/terminal' %>
+
 
   <!-- Computer -->
   <div class="row">
@@ -38,7 +40,6 @@
 
   <!-- Banner -->
   <%= partial 'partials/banner' %>
-
   <!-- Projects Section -->
   <%= partial 'partials/projects' %>
 </div>
@@ -50,7 +51,7 @@ window.onscroll = function() {
     console.log(opac);
   // document.body.style.background = "linear-gradient(rgba(255, 255, 255, " + (opac/15) + "), rgba(255, 255, 255, " + (opac/15) + ")), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/times-square-perspective.jpg) no-repeat";
   // document.querySelector(".background").style.background = "linear-gradient(rgba(255, 255, 255, " + (opac/15) + "), rgba(255, 255, 255, " + (opac/15) + ")), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/times-square-perspective.jpg) no-repeat";
-  document.querySelector(".background").style.background = "linear-gradient(rgba(255, 255, 255, " + (opac/15) + "), rgba(255, 255, 255, " + (opac/15) + ")), url(/assets/images/background.gif) no-repeat";
+  document.querySelector(".background").style.background = "linear-gradient(rgba(255, 255, 255, " + (opac/50) + "), rgba(255, 255, 255, " + (opac/50) + ")), url(/assets/images/background.gif) no-repeat";
   }
 }
 </script>
