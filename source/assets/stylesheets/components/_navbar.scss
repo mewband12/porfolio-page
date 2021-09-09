@@ -10,3 +10,61 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+
+.contact-links-top {
+  margin: 0 auto;
+  margin-bottom: 10px; }
+  .contact-links-top i {
+    color: #4e4e4e;
+    text-decoration: none; }
+  .contact-links-top :hover {
+    color: #7a967f;
+    text-decoration: none; }
+
+.navbar-brand :hover {
+  color: #7a967f;
+}
+.city-name {
+  font-family: "NeueMontreal-Medium";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  color: #4e4e4e;
+}
+.city-name2 {
+  font-family: "NeueMontreal-Medium";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  color: #4e4e4e;
+}
+
+
+
+
+@media screen and (max-device-width: 640px) {
+  .my-name {
+    font-size: 15px;
+    margin: 6px auto; }
+
+  .city-name {
+    display: none; }
+
+  i.fas.fa-envelope, i.fas.fa-user, i.fas.fa-laptop-code, i.fas.fa-magic {
+    font-size: 14px !important;
+    padding: 8px !important; }
+
+  .contact-links-top {
+    margin: unset !important;
+    margin-bottom: unset !important; }
+  .city-name2 {
+  font-family: "NeueMontreal-Medium";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0 auto;
+  color: #4e4e4e;
+}
+}
+
