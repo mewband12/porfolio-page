@@ -1,8 +1,9 @@
+<div class="container-fluid background">
 <%= partial 'partials/navbar' %>
 
 <!-- Page start -->
 
-<div class="container-fluid background">
+
 
   <div class="intro">
     <div class="name-title">
@@ -38,7 +39,6 @@
   <!-- Banner -->
   <%= partial 'partials/banner' %>
 
-
   <!-- Projects Section -->
   <%= partial 'partials/projects' %>
 </div>
@@ -49,7 +49,8 @@ window.onscroll = function() {
  var opac = (window.pageYOffset / nystories);
     console.log(opac);
   // document.body.style.background = "linear-gradient(rgba(255, 255, 255, " + (opac/15) + "), rgba(255, 255, 255, " + (opac/15) + ")), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/times-square-perspective.jpg) no-repeat";
-  document.querySelector(".background").style.background = "linear-gradient(rgba(255, 255, 255, " + (opac/15) + "), rgba(255, 255, 255, " + (opac/15) + ")), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/times-square-perspective.jpg) no-repeat";
+  // document.querySelector(".background").style.background = "linear-gradient(rgba(255, 255, 255, " + (opac/15) + "), rgba(255, 255, 255, " + (opac/15) + ")), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/times-square-perspective.jpg) no-repeat";
+  document.querySelector(".background").style.background = "linear-gradient(rgba(255, 255, 255, " + (opac/15) + "), rgba(255, 255, 255, " + (opac/15) + ")), url(/assets/images/background.gif) no-repeat";
   }
 }
 </script>
