@@ -1,0 +1,10 @@
+
+.tech-device {
+  display: block;
+}
+
+@media screen and (max-device-width: 640px) {
+  .tech-device {
+    display: none;
+  }
+}
