@@ -1,56 +1,49 @@
- <h1>test</h1>
- <span id="test" class="typed"></span>
+
   <div class="container bg-transparent">
-    <div class=fakeMenu>
-      <div class="fakeButtons fakeClose"></div>
-      <div class="fakeButtons fakeMinimize"></div>
-      <div class="fakeButtons fakeZoom"></div>
+    <div class="row">
+      <div class="col-2" style="margin-top:100px;">
+        <button class="btn btn-primary w3-button tablinks" onclick="terminal(event, 'Fade2')">Try me</button>
+        <button onclick="typeWriter()" class="btn btn-primary">Try again</button>
+      </div>
+      <div class="col-3">
+        <div class=fakeMenu>
+          <div class="fakeButtons fakeClose"></div>
+          <div class="fakeButtons fakeMinimize"></div>
+          <div class="fakeButtons fakeZoom"></div>
+        </div>
+        <div class="fakeScreen" style="height: 300px;">
+          <p id="demo" class="h3" style="color: #9CD9F0;"></p>
+          <%# <p class="typing-demo2" style="color: #CDEE69;">test is a good thing</p>
+          <p class="typing-demo" style="color: #E09690;">This is a typing demo.</p> %>
+        </div>
+      </div>
+      <div class="col-3"></div>
+      <div class="col-4">
+        <div id="Fade2" class="w3-container terminal w3-animate-opacity" style="display:none;">
+          <h1 class="underline">My tech stack</h1>
+          <h2>Fade in</h2>
+          <p>London is the capital city of England.</p>
+          <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        </div>
+      </div>
     </div>
-    <div class="fakeScreen">
-      <p class="" style="color: #9CD9F0;">test</p>
-      <p class="" style="color: #CDEE69;">test</p>
-      <p class="" style="color: #E09690;">test</p>
-    </div>
+
   </div>
 
 <div class="row invisible tech-device">
   <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, nam facilis adipisci velit excepturi totam nobis et assumenda temporibus? Eius accusamus recusandae velit enim tempora nemo incidunt at fuga ex?</h1>
 </div>
 
-<script type="module" src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
-import Typed from 'typed.js';
-const loadDynamicBannerText = () => {
-  console.log('testtype');
-  new Typed('#test', {
-    strings: ["Welcome to Learn Shapes"],
-    backSpeed: 40,
-    typeSpeed: 40,
-    loopCount: 1,
-    showCursor: true,
-    cursorChar: "|"
-  });
-  new Typed('#test2', {
-    strings: ["Here you will see the properties of basic shapes"],
-    stringsElement: '#typed2-strings',
-    backSpeed: 40,
-    typeSpeed: 40,
-    loop: true
-  });
+var i = 0;
+var txt = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, nam facilis adipisci velit excepturi totam nobis et assumenda temporibus? Eius accusamus recusandae velit enim tempora nemo incidunt at fuga ex?';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
 }
-
-setTimeout(() => {  var typed = new Typed('#typed', {stringsElement: '#typed-strings',
-backSpeed: 40,
-typeSpeed: 40,
-loopCount: 1,
-showCursor: true,
-cursorChar: "|"
-});
-
-
-var typed2 = new Typed('#typed2', {stringsElement: '#typed2-strings',
-backSpeed: 40,
-typeSpeed: 40,
-loop: true
-}); }, 10);
 </script>
