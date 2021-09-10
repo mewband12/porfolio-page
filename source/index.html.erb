@@ -22,12 +22,13 @@
   <%= partial 'partials/banner' %>
   <!-- Transition -->
   <%= partial 'partials/transition' %>
-
-
   <!-- summary of skills -->
   <%= partial 'partials/summary' %>
+  <%= partial 'partials/summary2' %>
+
   <!-- Projects Section -->
   <%= partial 'partials/realprojects' %>
+  <%= partial 'partials/realprojects2' %>
   <%#= partial 'partials/projects' %>
 </div>
 
@@ -46,19 +47,46 @@ window.onscroll = function() {
 }
 
 // tabs
+function summary(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
 
-$('.tabgroup > div').hide();
-$('.tabgroup > div:first-of-type').show();
-$('.tabs a').click(function(e){
-  e.preventDefault();
-    var $this = $(this),
-        tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
-        others = $this.closest('li').siblings().children('a'),
-        target = $this.attr('href');
-    others.removeClass('active');
-    $this.addClass('active');
-    $(tabgroup).children('div').hide();
-    $(target).show();
 
-})
+function fullstack(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+function DataSci(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city2");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink2");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-blue", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-blue";
+}
 </script>
