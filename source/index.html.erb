@@ -1,4 +1,5 @@
 <div class="container-fluid background">
+
 <%= partial 'partials/navbar' %>
 
 <!-- Page start -->
@@ -21,6 +22,10 @@
   <!-- Banner -->
   <%= partial 'partials/banner' %>
   <!-- Transition -->
+
+
+  <div class="background2">
+
   <%= partial 'partials/transition' %>
   <!-- summary of skills -->
   <%= partial 'partials/summary' %>
@@ -29,7 +34,8 @@
   <!-- Projects Section -->
   <%= partial 'partials/realprojects' %>
   <%= partial 'partials/realprojects2' %>
-  <%#= partial 'partials/projects' %>
+<%#= partial 'partials/projects' %>
+  </div>
 </div>
 
 
@@ -42,7 +48,11 @@ window.onscroll = function() {
     console.log(opac);
   // document.body.style.background = "linear-gradient(rgba(255, 255, 255, " + (opac/15) + "), rgba(255, 255, 255, " + (opac/15) + ")), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/times-square-perspective.jpg) no-repeat";
   // document.querySelector(".background").style.background = "linear-gradient(rgba(255, 255, 255, " + (opac/15) + "), rgba(255, 255, 255, " + (opac/15) + ")), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/times-square-perspective.jpg) no-repeat";
-  document.querySelector(".background").style.background = "linear-gradient(rgba(255, 255, 255, " + (opac/50) + "), rgba(255, 255, 255, " + (opac/50) + ")), url(/assets/images/background.gif) no-repeat";
+  if (opac > 170) {
+      document.querySelector(".background").style.background = "linear-gradient(rgba(255, 255, 255, " + (1-(opac-170)/100) + "), rgba(255, 255, 255, " + (1-(opac-170)/100) + ")), url(/assets/images/bottom.gif) no-repeat";
+  } else if(opac <= 170) {
+    document.querySelector(".background").style.background = "linear-gradient(rgba(255, 255, 255, " + (opac/100) + "), rgba(255, 255, 255, " + (opac/100) + ")), url(/assets/images/background.gif) no-repeat";
+  }
   }
 }
 

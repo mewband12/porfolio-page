@@ -20,6 +20,20 @@
   // color: pink;
 }
 
+.background2 {
+  // font-family: Calluna, Arial, sans-serif;
+  // background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/times-square-perspective.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(/assets/images/displaypic.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed !important;
+  background-size: 100% !important;
+  // background-size: 100%;
+  background-position: center top !important;
+  // padding: 1rem;
+  // padding-top: 45%;
+  // color: pink;
+}
+
 // h1 {
 //   font-size: 4rem;
 //   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
