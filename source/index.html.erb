@@ -24,7 +24,7 @@
   <%= partial 'partials/transition' %>
   <!-- summary of skills -->
   <%= partial 'partials/summary' %>
-  <%= partial 'partials/summary2' %>
+  <%#= partial 'partials/summary2' %>
 
   <!-- Projects Section -->
   <%= partial 'partials/realprojects' %>
@@ -49,11 +49,11 @@ window.onscroll = function() {
 // tabs
 function summary(evt, cityName) {
   var i, x, tablinks;
-  x = document.getElementsByClassName("city");
+  x = document.getElementsByClassName("skill");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablink");
+  tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < x.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
   }

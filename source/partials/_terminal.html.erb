@@ -1,3 +1,5 @@
+ <h1>test</h1>
+ <span id="test" class="typed"></span>
   <div class="container bg-transparent">
     <div class=fakeMenu>
       <div class="fakeButtons fakeClose"></div>
@@ -5,13 +7,50 @@
       <div class="fakeButtons fakeZoom"></div>
     </div>
     <div class="fakeScreen">
-      <p class="new-p line1">&#91;&nbsp;&ldquo;I'm a web developer.&rdquo;,</p>
-      <p class="new-p line2">&nbsp;&nbsp;&ldquo;I'm a web designer.&rdquo;,</p>
-      <p class="new-p line3">&nbsp;&nbsp;&ldquo;Let's work together!&rdquo;&nbsp;&#93;</p>
-      <p class="new-p line4"></p>
+      <p class="" style="color: #9CD9F0;">test</p>
+      <p class="" style="color: #CDEE69;">test</p>
+      <p class="" style="color: #E09690;">test</p>
     </div>
   </div>
 
 <div class="row invisible tech-device">
   <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, nam facilis adipisci velit excepturi totam nobis et assumenda temporibus? Eius accusamus recusandae velit enim tempora nemo incidunt at fuga ex?</h1>
 </div>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+import Typed from 'typed.js';
+const loadDynamicBannerText = () => {
+  console.log('testtype');
+  new Typed('#test', {
+    strings: ["Welcome to Learn Shapes"],
+    backSpeed: 40,
+    typeSpeed: 40,
+    loopCount: 1,
+    showCursor: true,
+    cursorChar: "|"
+  });
+  new Typed('#test2', {
+    strings: ["Here you will see the properties of basic shapes"],
+    stringsElement: '#typed2-strings',
+    backSpeed: 40,
+    typeSpeed: 40,
+    loop: true
+  });
+}
+
+setTimeout(() => {  var typed = new Typed('#typed', {stringsElement: '#typed-strings',
+backSpeed: 40,
+typeSpeed: 40,
+loopCount: 1,
+showCursor: true,
+cursorChar: "|"
+});
+
+
+var typed2 = new Typed('#typed2', {stringsElement: '#typed2-strings',
+backSpeed: 40,
+typeSpeed: 40,
+loop: true
+}); }, 10);
+</script>
