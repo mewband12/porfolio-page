@@ -7,25 +7,30 @@
   <p>To highlight the current tab/page the user is on, add a color class, and use JavaScript to update the active link.</p>
 
   <div class="w3-bar">
-    <button class="w3-bar-item w3-button tablink2 w3-blue" onclick="DataSci(event,'London2')">London</button>
-    <button class="w3-bar-item w3-button tablink2" onclick="DataSci(event,'Paris2')">Paris</button>
-    <button class="w3-bar-item w3-button tablink2" onclick="DataSci(event,'Tokyo2')">Tokyo</button>
+    <% data.products2.each_with_index do |product, index| %>
+      <% if index.zero? %>
+        <button class="w3-bar-item w3-button tablink w3-red" onclick="fullstack(event,'<%= product.name %>')"><%=product.name%></button>
+      <% else %>
+        <button class="w3-bar-item w3-button tablink" onclick="fullstack(event,'<%= product.name %>')"><%= product.name %></button>
+      <% end %>
+    <% end %>
   </div>
 
-  <div id="London2" class="w3-container w3-border city2">
-    <h2>London</h2>
-    <p>London is the capital city of England.</p>
-  </div>
-
-  <div id="Paris2" class="w3-container w3-border city2" style="display:none">
-    <h2>Paris</h2>
-    <p>Paris is the capital of France.</p>
-  </div>
-
-  <div id="Tokyo2" class="w3-container w3-border city2" style="display:none">
-    <h2>Tokyo</h2>
-    <p>Tokyo is the capital of Japan.</p>
-  </div>
+  <% data.products2.each_with_index do |product, index| %>
+    <% if index.zero? %>
+      <div id='<%= product.name %>' class="w3-container w3-border city">
+        <h2><%= product.name %></h2>
+        <p><%= product.description %></p>
+        <%= image_tag(product.image) %>
+      </div>
+    <% else %>
+      <div id='<%= product.name %>' class="w3-container w3-border city" style="display:none">
+        <h2><%= product.name %></h2>
+        <p><%= product.description %></p>
+        <%= image_tag(product.image) %>
+      </div>
+    <% end %>
+  <% end %>
 </div>
 
 
