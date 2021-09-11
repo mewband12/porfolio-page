@@ -46,7 +46,7 @@ var nystories = document.querySelector("p").offsetTop;
 window.onscroll = function() {
   if (window.pageYOffset > 0) {
  var opac = (window.pageYOffset / nystories);
-    console.log(opac);
+    // console.log(opac);
   // document.body.style.background = "linear-gradient(rgba(255, 255, 255, " + (opac/15) + "), rgba(255, 255, 255, " + (opac/15) + ")), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/times-square-perspective.jpg) no-repeat";
   // document.querySelector(".background").style.background = "linear-gradient(rgba(255, 255, 255, " + (opac/15) + "), rgba(255, 255, 255, " + (opac/15) + ")), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/times-square-perspective.jpg) no-repeat";
   if (opac > 170) {
@@ -79,7 +79,7 @@ function summary(evt, cityName) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks = document.getElementsByClassName("tablinksnew");
   for (i = 0; i < x.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
   }
