@@ -8,3 +8,11 @@ body {
 .container {
     background-color: white;
 }
+
+h1, h2, h3, p, ul, #demo, button {
+  font-family: 'Roboto Mono', monospace;
+}
+
+p, ul, button {
+  font-size:18px;
+}
