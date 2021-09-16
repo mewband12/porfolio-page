@@ -1,30 +1,19 @@
-- name: Easy Label2
-  description: Automatically generate Japan Post shipping labels
+- name: weather
+  description: Affini is a relationship manager aimed at helping people nurture new connections and maintain current ones. Built as part of a two-week product sprint at Le Wagon's bootcamp, Affini was built by me and three other team members to showcase everything we've learned over the course of the program. Affini was built using Ruby on Rails using Javascript, Ruby, and HTML/CSS. I developed the design system as well as the CSS framework that the team used to create different components. Designed from the ground up from building wireframes in Figma, all the way to deployment on Heroku.
+
   image: completion.jpg
-  url: https://apps.shopify.com/easy-label-japan-post
-  tags:
-    - devicon-rails-plain-wordmark
-    - devicon-postgresql-plain-wordmark
-    - devicon-heroku-original
-    - devicon-javascript-plain
+  url: https://www.barcsnap.com/
+  urlgh: https://github.com/mewband12
 
-- name: Easy Rates2
-  description: Display shipping rates from Japan Post in your store
-  image: easyrates.png
-  url: https://apps.shopify.com/easy-rates-japan-post
-  tags:
-    - devicon-rails-plain-wordmark
-    - devicon-postgresql-plain-wordmark
-    - devicon-heroku-original
-    - devicon-javascript-plain
+- name: feature selection
+  description: Affini is a relationship manager aimed at helping people nurture new connections and maintain current ones. Built as part of a two-week product sprint at Le Wagon's bootcamp, Affini was built by me and three other team members to showcase everything we've learned over the course of the program. Affini was built using Ruby on Rails using Javascript, Ruby, and HTML/CSS. I developed the design system as well as the CSS framework that the team used to create different components. Designed from the ground up from building wireframes in Figma, all the way to deployment on Heroku.
+  image: completion.jpg
+  url: https://thankyouchef.herokuapp.com/
+  urlgh: https://github.com/mewband12
 
-- name: Advanced COD2
-  description: Cash on delivery app listed on the Shopify store
-  image: advanced_cod.png
+- name: asd
+  description: Coming soon..
+  image: completion.jpg
   url: https://apps.shopify.com/advanced-cash-on-delivery-global
-  tags:
-    - devicon-rails-plain-wordmark
-    - devicon-postgresql-plain-wordmark
-    - devicon-heroku-original
-    - devicon-javascript-plain
+  urlgh: https://github.com/mewband12
 

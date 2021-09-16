@@ -9,22 +9,22 @@
   <div class="w3-bar">
     <% data.products2.each_with_index do |product, index| %>
       <% if index.zero? %>
-        <button class="w3-bar-item w3-button tablink w3-red" onclick="fullstack(event,'<%= product.name %>')"><%=product.name%></button>
+        <button class="w3-bar-item w3-button tablink2 w3-blue" onclick="DataSci(event,'<%= product.name %>')"><%=product.name%></button>
       <% else %>
-        <button class="w3-bar-item w3-button tablink" onclick="fullstack(event,'<%= product.name %>')"><%= product.name %></button>
+        <button class="w3-bar-item w3-button tablink2" onclick="DataSci(event,'<%= product.name %>')"><%= product.name %></button>
       <% end %>
     <% end %>
   </div>
 
   <% data.products2.each_with_index do |product, index| %>
     <% if index.zero? %>
-      <div id='<%= product.name %>' class="w3-container w3-border city">
+      <div id='<%= product.name %>' class="w3-container w3-border city2">
         <h2><%= product.name %></h2>
         <p><%= product.description %></p>
         <%= image_tag(product.image) %>
       </div>
     <% else %>
-      <div id='<%= product.name %>' class="w3-container w3-border city" style="display:none">
+      <div id='<%= product.name %>' class="w3-container w3-border city2" style="display:none">
         <h2><%= product.name %></h2>
         <p><%= product.description %></p>
         <%= image_tag(product.image) %>
