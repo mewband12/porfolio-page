@@ -54,6 +54,7 @@
       <div id='<%= product.name %>' class="w3-container w3-border city" style="display:none">
         <div class="row">
           <div class="col-6 py-5 px-3">
+            <h2><%= product.name %></h2>
             <p><strong>What is it?</strong></p>
             <p><%= product.description %></p>
             <% unless product.inspiration.nil? %>
@@ -69,7 +70,7 @@
               <a href=<%=product.urlgh%> style="text-decoration:none; color:black;"><i class="devicon-github-original-wordmark"></i></a>
             </p>
           </div>
-          <div class="col-6">
+          <div class="col-6 d-flex justify-content-center" style="align-items: center;">
             <div class="text-center">
               <%= image_tag product.image, style: "width:500px;" %>
             </div>

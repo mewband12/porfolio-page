@@ -1,19 +1,23 @@
-- name: weather
-  description: Affini is a relationship manager aimed at helping people nurture new connections and maintain current ones. Built as part of a two-week product sprint at Le Wagon's bootcamp, Affini was built by me and three other team members to showcase everything we've learned over the course of the program. Affini was built using Ruby on Rails using Javascript, Ruby, and HTML/CSS. I developed the design system as well as the CSS framework that the team used to create different components. Designed from the ground up from building wireframes in Figma, all the way to deployment on Heroku.
-
-  image: completion.jpg
+- name: Bike demands
+  description: investigate which factors affect the demand of bike sharing in London the most, while exploring different predictive models for future bike demands.
+  inspiration: As an active user of bike rental, I have always wondered what affects the demand of the bike
+  extra: The database is capable of finding up to 8 million Japanese products in the market.
+  techstacks: R studio, XGBoost, neural network, random forest
+  image: weather.gif
   url: https://www.barcsnap.com/
   urlgh: https://github.com/mewband12
 
-- name: feature selection
-  description: Affini is a relationship manager aimed at helping people nurture new connections and maintain current ones. Built as part of a two-week product sprint at Le Wagon's bootcamp, Affini was built by me and three other team members to showcase everything we've learned over the course of the program. Affini was built using Ruby on Rails using Javascript, Ruby, and HTML/CSS. I developed the design system as well as the CSS framework that the team used to create different components. Designed from the ground up from building wireframes in Figma, all the way to deployment on Heroku.
-  image: completion.jpg
+- name: Gaussian process
+  description: Investigating the gaussian process and experimenting it on real life situations for example on stock prices
+  inspiration: I like to predict future event with mathematics and at the time gaussian process does the trick
+  techstacks: Python, Latex, Matlab
+  image: essay.gif
   url: https://thankyouchef.herokuapp.com/
   urlgh: https://github.com/mewband12
 
 - name: asd
   description: Coming soon..
-  image: completion.jpg
+  image: completison.jpg
   url: https://apps.shopify.com/advanced-cash-on-delivery-global
   urlgh: https://github.com/mewband12
 
