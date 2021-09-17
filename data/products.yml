@@ -1,18 +1,23 @@
 - name: BarcSnap
-  description: Affini is a relationship manager aimed at helping people nurture new connections and maintain current ones. Built as part of a two-week product sprint at Le Wagon's bootcamp, Affini was built by me and three other team members to showcase everything we've learned over the course of the program. Affini was built using Ruby on Rails using Javascript, Ruby, and HTML/CSS. I developed the design system as well as the CSS framework that the team used to create different components. Designed from the ground up from building wireframes in Figma, all the way to deployment on Heroku.
-
-  image: completion.jpg
+  description: Scan a product's barcode to get information and personalized recommendation products.
+  inspiration: An expat going into a japanese store cannot read the description of the products
+  extra: The database is capable of finding up to 8 million Japanese products in the market.
+  techstacks: ruby and rails, javascript, cloudinary, scandit api, bootstrap, html, scss
+  image: Barcs.gif
   url: https://www.barcsnap.com/
   urlgh: https://github.com/mewband12
 
 - name: ThankyouChef
-  description: Affini is a relationship manager aimed at helping people nurture new connections and maintain current ones. Built as part of a two-week product sprint at Le Wagon's bootcamp, Affini was built by me and three other team members to showcase everything we've learned over the course of the program. Affini was built using Ruby on Rails using Javascript, Ruby, and HTML/CSS. I developed the design system as well as the CSS framework that the team used to create different components. Designed from the ground up from building wireframes in Figma, all the way to deployment on Heroku.
-  image: completion.jpg
+  description: The website to hire a personal chef to cook at your home. Semi-final project during Le Wagon bootcamp.
+  inspiration: Missing real life dining experience during the pandemic
+  extra: The database is capable of finding up to 8 million Japanese products in the market.
+  techstacks: ruby and rails, javascript, cloudinary, mapbox api, bootstrap, html, scss, PGsearch
+  image: Thankyouchef.gif
   url: https://thankyouchef.herokuapp.com/
   urlgh: https://github.com/mewband12
 
 - name: RevEd
-  description: Coming soon..
+  description1: Coming soon..
   image: completion.jpg
   url: https://apps.shopify.com/advanced-cash-on-delivery-global
   urlgh: https://github.com/mewband12
