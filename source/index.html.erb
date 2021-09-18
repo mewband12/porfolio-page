@@ -107,6 +107,20 @@ function summary(evt, cityName) {
   evt.currentTarget.className += " w3-red";
 }
 
+function summary2(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("skill2");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinksnew2");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  evt.currentTarget.className += " w3-red";
+  document.getElementById(cityName).style.display = "block";
+}
+
 
 function fullstack(evt, cityName) {
   var i, x, tablinks;

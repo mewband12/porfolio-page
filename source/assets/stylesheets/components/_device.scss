@@ -8,7 +8,7 @@
 
 @media screen and (max-device-width: 640px) {
   .tech-device {
-    display: none;
+    display: none !important;
   }
   .mobile {
     display: flex !important;

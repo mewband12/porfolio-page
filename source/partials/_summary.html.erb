@@ -1,123 +1,235 @@
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-3">
-      <div class="container shadow-css rounded p-4" style="background-color:rgba(255,255,255,0.7)">
-        <h1> About me</h1>
-        <p>A quick summary about me:
-        </p>
-        <ul class="pb-4 px-4">
-          <li>I am 21 yo Thai entrepeneur & programmer.</li>
-          <li>graduated with a mathematics degree with first class honours</li>
-          <li>completed the full stack coding bootcamp</li>
-          <li>will study more about programming at imperial</li>
-          <li>My dream is to create a successful EdTech startup</li>
-        </ul>
-        <p class="text-center">
-        <button class="w3-bar-item w3-button tablinksnew w3-red" onclick="summary(event, 'Left')">Stacks</button>
-        <button class="w3-bar-item w3-button tablinksnew" onclick="summary(event, 'Fade')">More</button>
-        <button class="w3-bar-item w3-button tablinksnew" onclick="summary(event, 'Right')">Right</button>
+<div class="row tech-device">
+  <div class="col-1"></div>
+  <div class="col-3">
+    <div class="container shadow-css rounded p-4" style="background-color:rgba(255,255,255,0.7)">
+      <h1> About me</h1>
+      <p>A quick summary about me:
+      </p>
+      <ul class="pb-4 px-4">
+        <li>I am 21 yo Thai entrepeneur & programmer.</li>
+        <li>graduated with a mathematics degree with first class honours</li>
+        <li>completed the full stack coding bootcamp</li>
+        <li>will study more about programming at imperial</li>
+        <li>My dream is to create a successful EdTech startup</li>
+      </ul>
+      <p class="text-center">
+      <button class="w3-bar-item w3-button tablinksnew w3-red" onclick="summary(event, 'Left')">Stacks</button>
+      <button class="w3-bar-item w3-button tablinksnew" onclick="summary(event, 'Fade')">More</button>
+      <button class="w3-bar-item w3-button tablinksnew" onclick="summary(event, 'Right')">Right</button>
+    </div>
+
+  </div>
+  <div class="col-1"></div>
+  <div class="col-5 shadow-css p-4" style="background-color:rgba(255,255,255,0.7)">
+
+    <div id="Left" class="w3-container skill w3-animate-left">
+      <h2 class="underline">My tech stack</h2>
+      <h3>Front <strong>End</strong></h3>
+      <div class="row" style="font-size:70px;">
+        <div class="col-1"></div>
+        <div class="col-2">
+          <i class="devicon-html5-plain-wordmark colored"></i>
+          <%# <i class="devicon-html5-plain" style="font-size:80px;"></i> %>
+        </div>
+        <div class="col-2">
+          <i class="devicon-css3-plain-wordmark colored"></i>
+          <%# <i class="devicon-css3-plain text-danger" style="font-size:80px;"></i> %>
+        </div>
+        <div class="col-2">
+          <i class="devicon-javascript-plain colored"></i>
+          <%# <i class="devicon-javascript-plain" style="font-size:80px;"></i> %>
+        </div>
+        <div class="col-2">
+          <i class="devicon-figma-plain colored"></i>
+        </div>
+        <div class="col-2">
+          <i class="devicon-react-original-wordmark colored"></i>
+        </div>
+      </div>
+
+      <h3>Back <strong>End</strong></h3>
+      <div class="row" style="font-size:70px;">
+        <div class="col-1"></div>
+        <div class="col-2">
+          <i class="devicon-ruby-plain-wordmark colored"></i>
+          <%# <i class="devicon-ruby-plain" style="font-size:80px;"></i> %>
+        </div>
+        <div class="col-2">
+          <i class="devicon-rails-plain-wordmark colored" ></i>
+          <%# <i class="devicon-rails-plain" style="font-size:80px; color:red;"></i> %>
+        </div>
+        <div class="col-2">
+          <i class="devicon-heroku-plain-wordmark colored"></i>
+        </div>
+        <div class="col-2">
+          <i class="devicon-python-plain-wordmark colored"></i>
+        </div>
+        <div class="col-2">
+          <i class="devicon-postgresql-plain-wordmark colored"></i>
+        </div>
+      </div>
+
+      <h3>More <strong>Tools</strong></h3>
+      <div class="row" style="font-size:70px;">
+        <div class="col-1"></div>
+        <div class="col-2">
+          <i class="devicon-matlab-plain colored"></i>
+          <%# <i class="devicon-ruby-plain" style="font-size:80px;"></i> %>
+        </div>
+        <div class="col-2">
+          <i class="devicon-git-plain-wordmark colored"></i>
+          <%# <i class="devicon-rails-plain" style="font-size:80px; color:red;"></i> %>
+        </div>
+        <div class="col-2">
+          <i class="devicon-cplusplus-line-wordmark colored"></i>
+        </div>
+        <div class="col-2">
+          <i class="devicon-tensorflow-original-wordmark colored"></i>
+        </div>
+        <div class="col-2">
+          <i class="fab fa-r-project" style="color:rgb(33,184,207);"></i>
+        </div>
       </div>
 
     </div>
-    <div class="col-1"></div>
-    <div class="col-5 shadow-css p-4" style="background-color:rgba(255,255,255,0.7)">
 
-      <div id="Left" class="w3-container skill w3-animate-left">
-        <h2 class="underline">My tech stack</h2>
-        <h3>Front <strong>End</strong></h3>
-        <div class="row" style="font-size:70px;">
-          <div class="col-1"></div>
-          <div class="col-2">
-            <i class="devicon-html5-plain-wordmark colored"></i>
-            <%# <i class="devicon-html5-plain" style="font-size:80px;"></i> %>
-          </div>
-          <div class="col-2">
-            <i class="devicon-css3-plain-wordmark colored"></i>
-            <%# <i class="devicon-css3-plain text-danger" style="font-size:80px;"></i> %>
-          </div>
-          <div class="col-2">
-            <i class="devicon-javascript-plain colored"></i>
-            <%# <i class="devicon-javascript-plain" style="font-size:80px;"></i> %>
-          </div>
-          <div class="col-2">
-            <i class="devicon-figma-plain colored"></i>
-          </div>
-          <div class="col-2">
-            <i class="devicon-react-original-wordmark colored"></i>
-          </div>
+    <div id="Fade" class="w3-container skill w3-animate-opacity" style="display:none">
+      <h1 class="underline">Find out more</h1>
+      <div class="row" style="font-size:150px;">
+        <div class="col-4">
+          <a href="https://github.com/mewband12" style="text-decoration:none; color:black;"><i class="devicon-github-original-wordmark"></i></a>
         </div>
-
-      <div id="Fade" class="w3-container skill w3-animate-opacity" style="display:none">
-        <h1 class="underline">Find out more</h1>
-        <div class="row" style="font-size:150px;">
-          <div class="col-4">
-            <a href="https://github.com/mewband12" style="text-decoration:none; color:black;"><i class="devicon-github-original-wordmark"></i></a>
-          </div>
-          <div class="col-4">
-            <a href="https://github.com/mewband12" style="text-decoration:none; background-color:none; color:black;"><i class="fas fa-file-pdf"></i></a>
-          </div>
-          <div class="col-4">
-            <a href="https://www.linkedin.com/in/kandanai" style="text-decoration:none;"><i class="devicon-linkedin-plain colored"></i></a>
-          </div>
+        <div class="col-4">
+          <a href="https://github.com/mewband12" style="text-decoration:none; background-color:none; color:black;"><i class="fas fa-file-pdf"></i></a>
         </div>
-
+        <div class="col-4">
+          <a href="https://www.linkedin.com/in/kandanai" style="text-decoration:none;"><i class="devicon-linkedin-plain colored"></i></a>
+        </div>
       </div>
 
+    </div>
 
-
-        <h3>Back <strong>End</strong></h3>
-        <div class="row" style="font-size:70px;">
-          <div class="col-1"></div>
-          <div class="col-2">
-            <i class="devicon-ruby-plain-wordmark colored"></i>
-            <%# <i class="devicon-ruby-plain" style="font-size:80px;"></i> %>
-          </div>
-          <div class="col-2">
-            <i class="devicon-rails-plain-wordmark colored" ></i>
-            <%# <i class="devicon-rails-plain" style="font-size:80px; color:red;"></i> %>
-          </div>
-          <div class="col-2">
-            <i class="devicon-heroku-plain-wordmark colored"></i>
-          </div>
-          <div class="col-2">
-            <i class="devicon-python-plain-wordmark colored"></i>
-          </div>
-          <div class="col-2">
-            <i class="devicon-postgresql-plain-wordmark colored"></i>
-          </div>
-        </div>
-
-        <h3>More <strong>Tools</strong></h3>
-        <div class="row" style="font-size:70px;">
-          <div class="col-1"></div>
-          <div class="col-2">
-            <i class="devicon-matlab-plain colored"></i>
-            <%# <i class="devicon-ruby-plain" style="font-size:80px;"></i> %>
-          </div>
-          <div class="col-2">
-            <i class="devicon-git-plain-wordmark colored"></i>
-            <%# <i class="devicon-rails-plain" style="font-size:80px; color:red;"></i> %>
-          </div>
-          <div class="col-2">
-            <i class="devicon-cplusplus-line-wordmark colored"></i>
-          </div>
-          <div class="col-2">
-            <i class="devicon-tensorflow-original-wordmark colored"></i>
-          </div>
-          <div class="col-2">
-            <i class="fab fa-r-project" style="color:rgb(33,184,207);"></i>
-          </div>
-        </div>
-
-      </div>
-
-      <div id="Right" class="w3-container skill w3-animate-right" style="display:none">
-        <h2 class="underline">Slide in from right</h2>
-        <p class="">London is the capital city of England.</p>
-        <p class="">It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-      </div>
+    <div id="Right" class="w3-container skill w3-animate-right" style="display:none">
+      <h2 class="underline">Slide in from right</h2>
+      <p class="">London is the capital city of England.</p>
+      <p class="">It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
     </div>
   </div>
+</div>
+
+<%# mobile %>
+<div class="row mobile m-2">
+  <div class="container shadow-css rounded p-4" style="background-color:rgba(255,255,255,0.7)">
+    <h1> About me</h1>
+    <p>A quick summary about me:
+    </p>
+    <ul class="pb-4 px-4">
+      <li>I am 21 yo Thai entrepeneur & programmer.</li>
+      <li>graduated with a mathematics degree with first class honours</li>
+      <li>completed the full stack coding bootcamp</li>
+      <li>will study more about programming at imperial</li>
+      <li>My dream is to create a successful EdTech startup</li>
+    </ul>
+    <p class="text-center">
+    <button id ="b1" class="w3-bar-item w3-button tablinksnew2 w3-red" onclick="summary2(event, 'one')">Stacks</button>
+    <button id ="b2"class="w3-bar-item w3-button tablinksnew2" onclick="summary2(event, 'two')">More</button>
+    <button id ="b3" class="w3-bar-item w3-button tablinksnew2" onclick="summary2(event, 'three')">Right</button>
+  </div>
+</div>
+<div class="row mobile m-2">
+  <div class="shadow-css p-4 my-5" style="background-color:rgba(153,153,255,0.7)">
+
+    <div id="one" class="w3-container skill2 w3-animate-left">
+      <h2 class="underline">My tech stack</h2>
+      <h3>Front <strong>End</strong></h3>
+      <div class="row" style="font-size:70px;">
+        <div class="col-2">
+          <i class="devicon-html5-plain-wordmark colored"></i>
+          <%# <i class="devicon-html5-plain" style="font-size:80px;"></i> %>
+        </div>
+        <div class="col-2">
+          <i class="devicon-css3-plain-wordmark colored"></i>
+          <%# <i class="devicon-css3-plain text-danger" style="font-size:80px;"></i> %>
+        </div>
+        <div class="col-2">
+          <i class="devicon-javascript-plain colored"></i>
+          <%# <i class="devicon-javascript-plain" style="font-size:80px;"></i> %>
+        </div>
+        <div class="col-2">
+          <i class="devicon-figma-plain colored"></i>
+        </div>
+        <div class="col-2">
+          <i class="devicon-react-original-wordmark colored"></i>
+        </div>
+      </div>
+
+      <h3>Back <strong>End</strong></h3>
+      <div class="row" style="font-size:70px;">
+        <div class="col-2">
+          <i class="devicon-ruby-plain-wordmark colored"></i>
+          <%# <i class="devicon-ruby-plain" style="font-size:80px;"></i> %>
+        </div>
+        <div class="col-2">
+          <i class="devicon-rails-plain-wordmark colored" ></i>
+          <%# <i class="devicon-rails-plain" style="font-size:80px; color:red;"></i> %>
+        </div>
+        <div class="col-2">
+          <i class="devicon-heroku-plain-wordmark colored"></i>
+        </div>
+        <div class="col-2">
+          <i class="devicon-python-plain-wordmark colored"></i>
+        </div>
+        <div class="col-2">
+          <i class="devicon-postgresql-plain-wordmark colored"></i>
+        </div>
+      </div>
+
+      <h3>More <strong>Tools</strong></h3>
+      <div class="row" style="font-size:70px;">
+        <div class="col-2">
+          <i class="devicon-matlab-plain colored"></i>
+          <%# <i class="devicon-ruby-plain" style="font-size:80px;"></i> %>
+        </div>
+        <div class="col-2">
+          <i class="devicon-git-plain-wordmark colored"></i>
+          <%# <i class="devicon-rails-plain" style="font-size:80px; color:red;"></i> %>
+        </div>
+        <div class="col-2">
+          <i class="devicon-cplusplus-line-wordmark colored"></i>
+        </div>
+        <div class="col-2">
+          <i class="devicon-tensorflow-original-wordmark colored"></i>
+        </div>
+        <div class="col-2">
+          <i class="fab fa-r-project" style="color:rgb(33,184,207);"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="two" class="w3-container skill2 w3-animate-opacity" style="display:none">
+      <h1 class="underline">Find out more</h1>
+      <div class="row" style="font-size:150px;">
+        <div class="col-4">
+          <a href="https://github.com/mewband12" style="text-decoration:none; color:black;"><i class="devicon-github-original-wordmark"></i></a>
+        </div>
+        <div class="col-4">
+          <a href="https://github.com/mewband12" style="text-decoration:none; background-color:none; color:black;"><i class="fas fa-file-pdf"></i></a>
+        </div>
+        <div class="col-4">
+          <a href="https://www.linkedin.com/in/kandanai" style="text-decoration:none;"><i class="devicon-linkedin-plain colored"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="three" class="w3-container skill2 w3-animate-right" style="display:none">
+      <h2 class="underline">Slide in from right</h2>
+      <p class="">London is the capital city of England.</p>
+      <p class="">It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    </div>
+  </div>
+</div>
+
 
 <div class="row invisible tech-device">
   <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, nam facilis adipisci velit excepturi totam nobis et assumenda temporibus? Eius accusamus recusandae velit enim tempora nemo incidunt at fuga ex?</h1>
