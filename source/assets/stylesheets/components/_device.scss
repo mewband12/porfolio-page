@@ -3,7 +3,7 @@
   // display: block;
 }
 .mobile {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-device-width: 640px) {
@@ -11,6 +11,6 @@
     display: none;
   }
   .mobile {
-    display:flex;
+    display: flex !important;
   }
 }
