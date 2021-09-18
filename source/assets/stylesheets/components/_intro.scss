@@ -28,7 +28,13 @@ h1.designer-title {
 
 @media screen and (max-device-width: 640px) {
   .name-title h1 {
-    font-size: 7vh; }
+    font-size: 6vh;
+    padding: 100px 0px;
+  }
+  .name-title h2 {
+    font-size: 5vh;
+    padding: 100px 0px;
+  }
 
   h1.designer-title {
     margin-bottom: -2px;

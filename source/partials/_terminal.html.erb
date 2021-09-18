@@ -1,6 +1,6 @@
 
   <div class="container bg-transparent">
-    <div class="row">
+    <div class="row tech-device">
       <div class="col-2" style="margin-top:100px;">
         <button class="btn btn-primary tablinks" onclick="terminal(event, 'Fade2')">Try me</button>
         <button onclick="typeWriter()" class="btn btn-primary">Try again</button>
@@ -27,6 +27,31 @@
       </div>
     </div>
 
+    <div class="row mobile d-flex justify-content-center">
+        <button class="btn btn-primary tablinks2 m-4" onclick="terminal2(event, 'Fade4')">Try me</button>
+        <button onclick="typeWriter2()" class="btn btn-primary m-4">Try again</button>
+    </div>
+    <div class="row mobile">
+      <div class="col-3">
+        <div class=fakeMenu style="width:200px;">
+          <div class="fakeButtons fakeClose"></div>
+          <div class="fakeButtons fakeMinimize"></div>
+          <div class="fakeButtons fakeZoom"></div>
+        </div>
+        <div class="fakeScreen" style="height: 300px; width:200px;">
+          <p id="demo2" class="h3" style="color: #9CD9F0;"></p>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div id="Fade4" class="w3-container terminal2" style="display:none;">
+          <div class="name-title">
+            <h1>So.. I went on to take a mathematics degree at the <strong>university of Warwick</strong></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 <div class="row invisible tech-device">
@@ -43,6 +68,18 @@ function typeWriter() {
     document.getElementById("demo").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
+  }
+}
+
+var i2 = 0;
+var txt2 = 'Through my undergraduate degree I became more and more captivated by coding. This led me to take as many programming opportunities as possible, through competitions, universities and..';
+var speed = 10;
+
+function typeWriter2() {
+  if (i2 < txt2.length) {
+    document.getElementById("demo2").innerHTML += txt2.charAt(i2);
+    i2++;
+    setTimeout(typeWriter2, speed);
   }
 }
 </script>

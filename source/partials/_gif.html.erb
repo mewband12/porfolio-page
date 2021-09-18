@@ -4,7 +4,7 @@
 <div class="text-center">
   <div class="name-title">
   <%# data-aos="fade-up" %>
-    <h1 class="" > It all began when... </h1>
+    <h2 class="" > It all began when... </h1>
   </div>
 </div>
 
@@ -20,16 +20,24 @@
 </div>
     <img src="assets/images/spiral.gif" alt=""style="width:450px;" class="shadow-css" data-aos="fade-right">
   </div>
-  <div class="col-4">
+  <div class="col-8">
     <div class=""  data-aos="fade-left">
       <%= image_tag "kid-maths.jpg", alt: "gifs", class: 'shadow-css w-100'%>
     </div>
   </div>
-  <div class="col-2"></div>
 </div>
 
-<div class="mobile">
-  <%= image_tag "spiral.gif", alt: "gifs", class: 'shadow-css w-100'%>
+<div class="row mobile">
+
+  <div class="col-5">
+    <%= image_tag "kid-maths.jpg", alt: "jpg", class: 'shadow-css', width: '250px'%>
+  </div>
+</div>
+<div class="row mobile py-5">
+  <div class="col-2"></div>
+  <div class="col-6">
+    <%= image_tag "spiral.gif", alt: "gifs", class: 'shadow-css', width: '260px'%>
+  </div>
 </div>
 
 <div class="row invisible tech-device">
