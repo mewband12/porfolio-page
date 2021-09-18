@@ -2,7 +2,7 @@
   <div class="col-1"></div>
   <div class="col-10 ">
 
-<div class="w3-container shadow-css bg-white">
+<div class="w3-container shadow-css bg-white tech-device">
   <div class="name-title pb-3 text-center">
     <h2>Machine Learning</h2>
   </div>
@@ -78,6 +78,87 @@
 </div>
 
 
+  </div>
+</div>
+
+
+<%# mobile device %>
+<div class="row mobile py-5">
+  <div class="w3-container shadow-css bg-white">
+    <div class="name-title pb-3 text-center">
+      <h2>Machine Learning</h2>
+    </div>
+    <div class="w3-bar">
+      <% data.products2.each_with_index do |product, index| %>
+        <% if index.zero? %>
+          <button class="w3-bar-item w3-button tablink2 w3-blue" onclick="DataSci(event,'<%= product.name %>')"><%=product.name%></button>
+        <% else %>
+          <button class="w3-bar-item w3-button tablink2" onclick="DataSci(event,'<%= product.name %>')"><%= product.name %></button>
+        <% end %>
+      <% end %>
+    </div>
+
+    <% data.products2.each_with_index do |product, index| %>
+      <% if index.zero? %>
+        <div id='<%= product.name %>' class="w3-container w3-border city2">
+          <div class="row">
+            <div class="py-5 px-3">
+              <h2><%= product.name %></h2>
+              <p><strong>What is it?</strong></p>
+              <p><%= product.description %></p>
+              <% unless product.inspiration.nil? %>
+                <p><strong>Inspiration</strong></p>
+                <p><%= product.inspiration %></p>
+              <% end %>
+              <% unless product.techstacks.nil? %>
+                <p><strong>Tech stacks</strong></p>
+                <p><%= product.techstacks %></p>
+              <% end %>
+              <p class="h1">
+                <a href=<%=product.url%> style="text-decoration:none; color:black;"><i class="fas fa-eye"></i> </a>
+                <a href=<%=product.urlgh%> style="text-decoration:none; color:black;"><i class="devicon-github-original-wordmark"></i></a>
+              </p>
+            </div>
+            <div class="d-flex justify-content-center" style="align-items: center;">
+              <div class="text-center">
+                <%= image_tag product.image, style: "width:349px;" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% else %>
+        <div id='<%= product.name %>' class="w3-container w3-border city2" style="display:none">
+          <div class="row">
+            <div class="py-5 px-3">
+              <h2><%= product.name %></h2>
+              <p><strong>What is it?</strong></p>
+              <p><%= product.description %></p>
+              <% unless product.inspiration.nil? %>
+                <p><strong>Inspiration</strong></p>
+                <p><%= product.inspiration %></p>
+              <% end %>
+              <% unless product.techstacks.nil? %>
+                <p><strong>Tech stacks</strong></p>
+                <p><%= product.techstacks %></p>
+              <% end %>
+              <p class="h1">
+                <a href=<%=product.url%> style="text-decoration:none; color:black;"><i class="fas fa-eye"></i> </a>
+                <a href=<%=product.urlgh%> style="text-decoration:none; color:black;"><i class="devicon-github-original-wordmark"></i></a>
+              </p>
+            </div>
+            <div class="d-flex justify-content-center" style="align-items: center;">
+              <div class="text-center">
+                <%= image_tag product.image, style: "width:349px;" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+
+    </div>
   </div>
 </div>
 
