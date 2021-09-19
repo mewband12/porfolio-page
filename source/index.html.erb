@@ -119,6 +119,14 @@ function summary2(evt, cityName) {
     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
   }
   evt.currentTarget.className += " w3-red";
+
+  // var buttons = ['b1', 'b2', 'b3']
+  // buttons.forEach(element =>
+  //   document.getElementById(element).addEventListener("click", (event) => {
+  //     // event.currentTarget.className += " w3-red";
+  //     document.getElementById(element).classList.add("w3-red")
+  //   })
+  // );
   document.getElementById(cityName).style.display = "block";
 }
 
