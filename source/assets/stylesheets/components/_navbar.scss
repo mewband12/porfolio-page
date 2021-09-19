@@ -2,6 +2,14 @@
   justify-content: space-between;
   // background: white;
   background-color: transparent;
+  display: none;
+}
+
+.navbar-lewagon.active {
+  justify-content: space-between;
+  // background: white;
+  background-color: transparent;
+  display: flex;
 }
 
 .navbar-lewagon .navbar-collapse {

@@ -23,7 +23,7 @@
     <meta property="description" content="<%= data.meta_tags.description %>">
     <meta property="image" content="<%= data.meta_tags.image %>">
     <title>Kandanai</title>
-    <link rel="icon" href="assets/images/displaypic.jpg">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favimew.png">
     <!-- Comment this out when meta tags configured -->
     <%#= display_meta_tags %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
@@ -64,12 +64,25 @@
   </head>
 
   <body>
+    <%# loading page %>
+    <%= partial 'partials/navbar' %>
+    <div class="loader-wrapper">
+      <div class="loading">
+        <img src="http://a.top4top.net/p_1990j031.gif" alt="Loading">
+      </div>
+    </div>
     <%= yield %>
     <%= javascript_include_tag "bundle" %>
     <%= javascript_include_tag  "app" %>
     <%# <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script> %>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+          $(".navbar-lewagon").addClass('active');
+          $('body').css({'overflow':'auto', 'height':'auto', 'position':'relative'});
+        });
+    </script>
     <script>
       AOS.init();
     </script>
