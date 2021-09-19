@@ -1,4 +1,4 @@
-- name: BikeDem
+- name: Bike
   description: investigate which factors affect the demand of bike sharing in London the most, while exploring different predictive models for future bike demands.
   inspiration: As an active user of bike rental, I have always wondered what affects the demand of the bike
   extra: The database is capable of finding up to 8 million Japanese products in the market.
@@ -7,7 +7,7 @@
   url: https://www.barcsnap.com/
   urlgh: https://github.com/mewband12
 
-- name: GaussianProc
+- name: GaussianPro
   description: Investigating the gaussian process and experimenting it on real life situations for example on stock prices
   inspiration: I like to predict future event with mathematics and at the time gaussian process does the trick
   techstacks: Python, Latex, Matlab
@@ -15,7 +15,7 @@
   url: https://thankyouchef.herokuapp.com/
   urlgh: https://github.com/mewband12
 
-- name: Coming soon...
+- name: Coming..
   description: Coming soon..
   image: completison.jpg
   url: https://apps.shopify.com/advanced-cash-on-delivery-global

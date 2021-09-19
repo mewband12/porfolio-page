@@ -7,7 +7,7 @@
   url: https://www.barcsnap.com/
   urlgh: https://github.com/mewband12
 
-- name: ThankyouChef
+- name: ThankqChef
   description: The website to hire a personal chef to cook at your home. Semi-final project during Le Wagon bootcamp.
   inspiration: Missing real life dining experience during the pandemic
   extra: The database is capable of finding up to 8 million Japanese products in the market.
