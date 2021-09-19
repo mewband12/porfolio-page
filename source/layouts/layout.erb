@@ -30,12 +30,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" title="default" href="css/main.css">
-    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
     <%# <link rel="stylesheet" href="dist/devices.css"> %>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/stylesheets/dist2/devices.css">
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("body").css("display", "none");
 
+        $("body").fadeIn(2000);
+
+        $("a.transition").click(function(event){
+            event.preventDefault();
+            linkLocation = this.href;
+            $("body").fadeOut(1000, redirectPage);
+        });
+        $("a").animate({
+            color: 'green'
+        }, 2000)
+
+        function redirectPage() {
+            window.location = linkLocation;
+        }
+    });
+    </script>
     <%= stylesheet_link_tag "app" %>
     <%= stylesheet_link_tag "highlighting" %>
     <%= favicon_tag 'favicon.ico' %>
@@ -46,7 +63,9 @@
     <%= yield %>
     <%= javascript_include_tag "bundle" %>
     <%= javascript_include_tag  "app" %>
+    <%# <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script> %>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
       AOS.init();
     </script>

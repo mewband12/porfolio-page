@@ -32,7 +32,7 @@
   <%#= partial 'partials/summary2' %>
 
   <!-- Projects Section -->
-  <div id="project-section">
+  <div id="project-section" class="transition">
   <%= partial 'partials/realprojects' %>
   <%= partial 'partials/realprojects2' %>
   </div>
@@ -40,7 +40,11 @@
 
 </div>
 
-
+<%# <script type="text/javascript">
+    $(document).ready(function() {
+        $("body").css("display", "none");
+    });
+</script> %>
 
 <script>
 // var nystories = document.querySelector("p").offsetTop;
