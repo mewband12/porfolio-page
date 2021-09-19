@@ -11,9 +11,9 @@
   <div class="w3-bar">
     <% data.products2.each_with_index do |product, index| %>
       <% if index.zero? %>
-        <button class="w3-bar-item w3-button tablink2 w3-blue" onclick="DataSci(event,'<%= product.name %>')"><%=product.name%></button>
+        <button class="w3-bar-item w3-button tablink2 w3-blue" style ="cursor:none;" onclick="DataSci(event,'<%= product.name %>')"><%=product.name%></button>
       <% else %>
-        <button class="w3-bar-item w3-button tablink2" onclick="DataSci(event,'<%= product.name %>')"><%= product.name %></button>
+        <button class="w3-bar-item w3-button tablink2"  style ="cursor:none;"onclick="DataSci(event,'<%= product.name %>')"><%= product.name %></button>
       <% end %>
     <% end %>
   </div>

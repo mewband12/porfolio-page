@@ -32,3 +32,55 @@ html {
   transition-duration: 5s;
 }
 
+*, button{
+  cursor: none;
+}
+
+#cursor,
+#follower {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+}
+
+#cursor {
+  background: #c4dce2;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: -4px 0 0 -4px;
+  z-index: 1001;
+  opacity: 0;
+  transition: transform 0.5s;
+}
+
+#follower {
+  background: #c4dce2;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: -4px 0 0 -4px;
+  z-index: 1000;
+  transition: transform 0.5s;
+}
+
+#cursor.active {
+  transform: scale(2.4);
+  background: #00ccff;
+}
+
+#cursor.hide,
+#follower.hide {
+  display: none;
+}
+
+@media screen and (max-device-width: 640px) {
+  #cursor {
+    display:none;
+  }
+}
+
+.cnone {
+  cursor:none;
+}

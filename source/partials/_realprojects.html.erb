@@ -13,9 +13,9 @@
   <div class="w3-bar">
     <% data.products.each_with_index do |product, index| %>
       <% if index.zero? %>
-        <button class="w3-bar-item w3-button tablink w3-red" onclick="fullstack(event,'<%= product.name %>')"><%=product.name%></button>
+        <button class="w3-bar-item w3-button tablink w3-red" style ="cursor:none;" onclick="fullstack(event,'<%= product.name %>')"><%=product.name%></button>
       <% else %>
-        <button class="w3-bar-item w3-button tablink" onclick="fullstack(event,'<%= product.name %>')"><%= product.name %></button>
+        <button class="w3-bar-item w3-button tablink" style ="cursor:none;" onclick="fullstack(event,'<%= product.name %>')"><%= product.name %></button>
       <% end %>
     <% end %>
   </div>
@@ -94,9 +94,9 @@
     <div class="w3-bar">
       <% data.products.each_with_index do |product, index| %>
         <% if index.zero? %>
-          <button class="w3-bar-item tablink btn-secondary w3-red" onclick="fullstack(event,'<%= product.name %>2')"><%=product.name%></button>
+          <button class="w3-bar-item tablink btn-secondary w3-red" style ="cursor:none;" onclick="fullstack(event,'<%= product.name %>2')"><%=product.name%></button>
         <% else %>
-          <button class="w3-bar-item tablink btn-secondary" onclick="fullstack(event,'<%= product.name %>2')"><%= product.name %></button>
+          <button class="w3-bar-item tablink btn-secondary" style ="cursor:none;" onclick="fullstack(event,'<%= product.name %>2')"><%= product.name %></button>
         <% end %>
       <% end %>
     </div>

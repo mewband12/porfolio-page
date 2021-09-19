@@ -45,7 +45,67 @@
         $("body").css("display", "none");
     });
 </script> %>
+<script>
+$(function(){
+   const cursor=$("#cursor");
+   const follower=$("#follower");
+   const iframes = document.querySelectorAll("iframe");
 
+   $(document).on("mousemove",function(e){
+      const x=e.clientX;
+      const y=e.clientY;
+      cursor.css({
+         "opacity":"1",
+         "top":y+"px",
+         "left":x+"px"
+      });
+      setTimeout(function(){
+         follower.css({
+            "opacity":"0.5",
+             "top":y+"px",
+             "left":x+"px"
+         });
+      },200);　//following speed
+     });
+
+   //on a
+   $("a").on({
+      "mouseenter": function() {
+         cursor.addClass("active");
+         follower.addClass("active");
+      },
+      "mouseleave": function() {
+         cursor.removeClass("active");
+         follower.removeClass("active");
+      }
+     });
+
+    //on btn
+    $("button").on({
+      "mouseenter": function() {
+         cursor.addClass("active");
+         follower.addClass("active");
+      },
+      "mouseleave": function() {
+         cursor.removeClass("active");
+         follower.removeClass("active");
+      }
+     });
+
+   //on iframe
+   $("iframe").on({
+      "mouseenter": function() {
+         cursor.addClass("hide");
+         follower.addClass("hide");
+      },
+      "mouseleave": function() {
+         cursor.removeClass("hide");
+         follower.removeClass("hide");
+      }
+     });
+});
+
+</script>
 <script>
 // var nystories = document.querySelector("p").offsetTop;
 var nystories = 12
