@@ -23,7 +23,7 @@
 .background2 {
   // font-family: Calluna, Arial, sans-serif;
   // background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/times-square-perspective.jpg);
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(/assets/images/displaypic.gif);
+  // background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(/assets/images/displaypic.gif);
   background-repeat: no-repeat;
   background-attachment: fixed !important;
   background-size: 100% !important;
@@ -57,6 +57,21 @@ span {
 
 @media screen and (max-device-width: 640px) {
   body .background {
-    background-size: auto !important;
+    // background-size: auto !important;
+    background-size: 1500px !important;
+  }
+
+  .background {
+    // font-family: Calluna, Arial, sans-serif;
+    // background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/times-square-perspective.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(/assets/images/bookflip.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: 100% !important;
+    // background-size: 100%;
+    background-position: center top !important;
+    // padding: 1rem;
+    // padding-top: 45%;
+    // color: pink;
   }
 }
