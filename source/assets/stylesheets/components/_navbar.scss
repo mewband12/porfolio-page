@@ -12,6 +12,13 @@
   width: 40px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
 
 .contact-links-top {
   margin: 0 auto;
