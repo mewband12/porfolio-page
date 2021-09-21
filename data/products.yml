@@ -3,7 +3,7 @@
   inspiration: An expat going into a japanese store cannot read the description of the products
   extra: The database is capable of finding up to 8 million Japanese products in the market.
   techstacks: ruby and rails, javascript, cloudinary, scandit api, bootstrap, html, scss
-  image: Barcs.gif
+  image: barcsnapcropped.gif
   url: https://www.barcsnap.com/
   urlgh: https://github.com/mewband12
 
@@ -12,7 +12,7 @@
   inspiration: Missing real life dining experience during the pandemic
   extra: The database is capable of finding up to 8 million Japanese products in the market.
   techstacks: ruby and rails, javascript, cloudinary, mapbox api, bootstrap, html, scss, PGsearch
-  image: Thankyouchef.gif
+  image: thankcropped.gif
   url: https://thankyouchef.herokuapp.com/
   urlgh: https://github.com/mewband12
 
